@@ -11,6 +11,6 @@ function plugin_register_shortcode() {
     add_shortcode('yoda', 'plugin_yoda_shortcode');
 }
 
-add_action('init', 'plugin_yoda_shortcode');
+add_action('init', 'plugin_register_shortcode');
 
 
