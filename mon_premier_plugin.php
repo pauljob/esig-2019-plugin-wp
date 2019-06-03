@@ -13,4 +13,12 @@ function plugin_register_shortcode() {
 
 add_action('init', 'plugin_register_shortcode');
 
+function plugin_vador_shortcode() {
+    if (empty($content)) {
+        $content = 'Luke';
+    }
+    return "<blockquote>". $content . ", je suis ton père ! </blockquote>";
+}
+
+
 
