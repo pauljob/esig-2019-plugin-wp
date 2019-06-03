@@ -20,5 +20,11 @@ function plugin_vador_shortcode() {
     return "<blockquote>". $content . ", je suis ton père ! </blockquote>";
 }
 
+function mon_plugin_register_shortcode() {
+    add_shortcode('yoda', 'plugin_yoda_shortcode');
+    add_shortcode('vador', 'plugin_vador_shortcode');
+}
+add_action('init', 'mon_plugin_register_shortcode');
+
 
 
